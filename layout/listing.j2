@@ -1,0 +1,29 @@
+{% extends "base.j2" %}
+{% from "macros.j2" import render_excerpt with context  %}
+{% block main %}
+{% from "macros.j2" import render_excerpt with context %}
+<section class="blog_excerpt">
+{% set latest = site.content.walk_resources_sorted_by_time()|first %}
+
+{% if latest -%}
+{{ render_excerpt(latest, 'post') }}
+
+<a class="button white medium"
+    href="{{ content_url(latest.url) }}">Read more&hellip;</a>
+
+{%- endif %}
+
+</section>
+<hr>
+<h3>Recent Posts</h3>
+
+<div id="archive">
+<ul class="listing clear">
+{% for res in resource.node.walk_resources_sorted_by_time() %}
+<li class="blogs">
+<span class="entry-date">{{ res.meta.created.strftime('%a, %d %b %Y') }}</span><a class="entry-title" href="{{ content_url(res.url) }}">{{ res.meta.title }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

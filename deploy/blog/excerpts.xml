@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-05-31T16:33:31Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">(Mis)perceptions of Linux</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-05-06-Perceptions-of-Linux.html"/>
+            <updated>2011-05-06T10:00:00Z</updated>
+            <published>2011-05-06T10:00:00Z</published>
+            <id>/blog/2011-05-06-Perceptions-of-Linux.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+            
+            <content type="html">
+                
+                &lt;p&gt;In a rather geeky conversation I had with my friends, the topic of Linux came up. Surprisingly the person who brought it up wasn&amp;#8217;t me. This person had an unpleasant experience with a linux distro in their computer science class, a sentiment which another friend of mine echoed regarding their experience with their computer science&amp;nbsp;class.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Troubleshooting Computer Problems</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-24-Troubleshooting.html"/>
+            <updated>2011-04-24T10:00:00Z</updated>
+            <published>2011-04-24T10:00:00Z</published>
+            <id>/blog/2011-04-24-Troubleshooting.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Yesterday, as I went my merry way tinkering with my computer as I usually do, I rebooted, only to see errors abound. Having only slept the minimal amount of sleep needed to stay alive, I grew impatient and nearly, in an impulsive move, reinstalled&amp;nbsp;everything.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">PKGBUILDs</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-22-Updated-PKGBUILDs.html"/>
+            <updated>2011-04-22T10:00:00Z</updated>
+            <published>2011-04-22T10:00:00Z</published>
+            <id>/blog/2011-04-22-Updated-PKGBUILDs.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+                        <category   scheme="/blog/tags"
+                        term="pkgbuilds"
+                        label="Pkgbuilds" />
+            
+            <content type="html">
+                
+                &lt;p&gt;After a few minutes of frustration trying to install &lt;a href=&#34;http://aur.archlinux.org/packages.php?ID=43266&#34;&gt;indicator-appmenu&lt;/a&gt; from the &lt;span class=&#34;caps&#34;&gt;AUR&lt;/span&gt;, I decided to update the &lt;span class=&#34;caps&#34;&gt;PKGBUILD&lt;/span&gt; myself. This of course induced a strange &lt;span class=&#34;caps&#34;&gt;PKGBUILD&lt;/span&gt; updating frenzy, so I uploaded everything to my &lt;a href=&#34;https://github.com/spo11/archlinux&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Linux</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-18-Linux.html"/>
+            <updated>2011-04-18T10:00:00Z</updated>
+            <published>2011-04-18T10:00:00Z</published>
+            <id>/blog/2011-04-18-Linux.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="desktop"
+                        label="Desktop" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I am thoroughly obsessed with desktop customization. So obsessed am I, in fact, that I decided to install Arch Linux as my only operating system. It truly is a computer control freak&amp;#8217;s operating system as the base install consists of a console window and a package manager (called &lt;em&gt;pacman&lt;/em&gt;). Unlike some other distributions, Arch does not come pre-loaded with any desktop environment or window manager. You choose and installthese&amp;nbsp;yourself.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">New site</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-17-NewSite.html"/>
+            <updated>2011-04-17T10:00:00Z</updated>
+            <published>2011-04-17T10:00:00Z</published>
+            <id>/blog/2011-04-17-NewSite.html</id>
+                        <category   scheme="/blog/tags"
+                        term="site"
+                        label="Site" />
+                        <category   scheme="/blog/tags"
+                        term="jekyll"
+                        label="Jekyll" />
+                        <category   scheme="/blog/tags"
+                        term="hyde"
+                        label="Hyde" />
+            
+            <content type="html">
+                
+                &lt;p&gt;As if I didn&amp;#8217;t have enough distractions with which to procrastinate, I started this site.I decided that my geeky interests needed some sort of place on earth so that I can up my geek cred by&amp;nbsp;infinity.&lt;/p&gt;            </content>
+        </entry>
+    </feed>

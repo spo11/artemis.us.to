@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2011-05-31T16:33:30Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">(Mis)perceptions of Linux</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-05-06-Perceptions-of-Linux.html"/>
+            <updated>2011-05-06T10:00:00Z</updated>
+            <published>2011-05-06T10:00:00Z</published>
+            <id>/blog/2011-05-06-Perceptions-of-Linux.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+            
+            <content type="html">
+                                &lt;p&gt;In a rather geeky conversation I had with my friends, the topic of Linux came up. Surprisingly the person who brought it up wasn&amp;#8217;t me. This person had an unpleasant experience with a linux distro in their computer science class, a sentiment which another friend of mine echoed regarding their experience with their computer science class.
+I find it unfortunate that the instructors of such courses do not seem to clarify that the flavour of linux they use to teach students is not representative of all linux distros. Without clarifying this they inadvertently turn off people less inclined to the technical aspects of computing to linux distributions in&amp;nbsp;general. &lt;/p&gt;
+&lt;p&gt;We have a plethora of operating systems based on the linux kernel available in all sorts of configurations. Many of the most popular ones like Ubuntu, Linux Mint, have progressed to the point where installation is a graphical process that has been designed with new users in mind.  I feel that we have reached a point in linux development where we have so many choices that every demographic of users can find a linux os of&amp;nbsp;choice. &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Troubleshooting Computer Problems</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-24-Troubleshooting.html"/>
+            <updated>2011-04-24T10:00:00Z</updated>
+            <published>2011-04-24T10:00:00Z</published>
+            <id>/blog/2011-04-24-Troubleshooting.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+            
+            <content type="html">
+                                &lt;p&gt;Yesterday, as I went my merry way tinkering with my computer as I usually do, I rebooted, only to see errors abound. Having only slept the minimal amount of sleep needed to stay alive, I grew impatient and nearly, in an impulsive move, reinstalled everything.
+But I stopped myself when it occurred to me just how much work had gone into configuring this system. I certainly hadn&amp;#8217;t the time to reconfigure &lt;em&gt;everything&lt;/em&gt;. The problem I&amp;#8217;d encountered yesterday had happened once before, but rather than patiently figuring out what it was that caused the problem, and finding a remedy for it, I maniacally re-installed&amp;nbsp;everything.&lt;/p&gt;
+&lt;p&gt;I blamed &lt;span class=&#34;caps&#34;&gt;GNOME&lt;/span&gt;, harassed &lt;span class=&#34;caps&#34;&gt;KDE&lt;/span&gt;, and worst of all, broke up with subtle&amp;nbsp;wm. &lt;/p&gt;
+&lt;p&gt;I decided that wouldn&amp;#8217;t be the case &lt;em&gt;this&lt;/em&gt; time&amp;nbsp;around.&lt;/p&gt;
+&lt;p&gt;So on I went in my ever so merry adventure of turning off daemons, changing configurations. It wasn&amp;#8217;t until I&amp;#8217;d stumbled upon a couple of Arch bbs posts that I finally figured it all out. After reading through a wiki page, I found a solution. No reinstall&amp;nbsp;necessary.&lt;/p&gt;
+&lt;h3&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;No space left on&amp;nbsp;device&amp;#8221;&lt;/h3&gt;
+&lt;p&gt;The problem was that when I had installed Arch, I neglected to read the part in the beginner&amp;#8217;s guide that went over partitioning. I didn&amp;#8217;t realize that &lt;span class=&#34;caps&#34;&gt;10GB&lt;/span&gt; apparently wasn&amp;#8217;t enough for a root partition, especially for my&amp;nbsp;uses. &lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;/var&lt;/code&gt; directory was the culprit. It had filled up because I hadn&amp;#8217;t bothered clearing the cache folder pacman keeps. Just a simple command fixed my&amp;nbsp;problems.&lt;/p&gt;
+&lt;pre&gt;pacman -Scc&lt;/pre&gt;
+
+&lt;p&gt;This started a cli prompt asking whether to clear the&amp;nbsp;cache. &lt;/p&gt;
+&lt;p&gt;And all my (computer-related) problems were ameliorated. Now if I could only issue a command on myself to stop being so&amp;nbsp;dramatic. &lt;/p&gt;
+&lt;pre&gt;/etc/rc.d/drama stop&lt;/pre&gt;
+
+&lt;p&gt;Wouldn&amp;#8217;t that be so&amp;nbsp;easy? &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">PKGBUILDs</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-22-Updated-PKGBUILDs.html"/>
+            <updated>2011-04-22T10:00:00Z</updated>
+            <published>2011-04-22T10:00:00Z</published>
+            <id>/blog/2011-04-22-Updated-PKGBUILDs.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="arch"
+                        label="Arch" />
+                        <category   scheme="/blog/tags"
+                        term="pkgbuilds"
+                        label="Pkgbuilds" />
+            
+            <content type="html">
+                                &lt;p&gt;After a few minutes of frustration trying to install &lt;a href=&#34;http://aur.archlinux.org/packages.php?ID=43266&#34;&gt;indicator-appmenu&lt;/a&gt; from the &lt;span class=&#34;caps&#34;&gt;AUR&lt;/span&gt;, I decided to update the &lt;span class=&#34;caps&#34;&gt;PKGBUILD&lt;/span&gt; myself. This of course induced a strange &lt;span class=&#34;caps&#34;&gt;PKGBUILD&lt;/span&gt; updating frenzy, so I uploaded everything to my &lt;a href=&#34;https://github.com/spo11/archlinux&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;What I&amp;#8217;ve&amp;nbsp;uploaded&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;indicator-applet&lt;/li&gt;
+&lt;li&gt;indicator-appmenu&lt;/li&gt;
+&lt;li&gt;indicator-messages&lt;/li&gt;
+&lt;li&gt;indicator-session&lt;/li&gt;
+&lt;li&gt;lo-menubar&lt;/li&gt;
+&lt;/ul&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Linux</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-18-Linux.html"/>
+            <updated>2011-04-18T10:00:00Z</updated>
+            <published>2011-04-18T10:00:00Z</published>
+            <id>/blog/2011-04-18-Linux.html</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="desktop"
+                        label="Desktop" />
+            
+            <content type="html">
+                                &lt;p&gt;I am thoroughly obsessed with desktop customization. So obsessed am I, in fact, that I decided to install Arch Linux as my only operating system. It truly is a computer control freak&amp;#8217;s operating system as the base install consists of a console window and a package manager (called &lt;em&gt;pacman&lt;/em&gt;). Unlike some other distributions, Arch does not come pre-loaded with any desktop environment or window manager. You choose and installthese&amp;nbsp;yourself.&lt;/p&gt;
+&lt;h3&gt;Differences between a window manager and a desktop&amp;nbsp;environment&lt;/h3&gt;
+&lt;p&gt;A &lt;em&gt;window manager&lt;/em&gt; (&lt;span class=&#34;caps&#34;&gt;WM&lt;/span&gt;) is just that: a program that manages your windows. There are two types of window managers: tiling ones, and floating ones. In a tiling one, you do not usually have the traditional titlebar, and can arrange the windows side by side without resizing it&amp;nbsp;yourself.&lt;/p&gt;
+&lt;div class=&#34;picture left&#34;&gt; &lt;img src=&#34;/media/images/gnome-2-32.png&#34; width=&#34;250&#34; alt=&#34;Not this one&#34; /&gt;&lt;span class=&#34;caps&#34;&gt;GNOME&lt;/span&gt; desktop&lt;/div&gt;
+
+&lt;p&gt;A &lt;em&gt;desktop environment&lt;/em&gt; (&lt;span class=&#34;caps&#34;&gt;DE&lt;/span&gt;) is a set of applications and &lt;span class=&#34;caps&#34;&gt;GUI&lt;/span&gt; tools. &lt;span class=&#34;caps&#34;&gt;GNOME&lt;/span&gt; is an example of this in that it comes with a set of applications the developers decided were&amp;nbsp;necessary. &lt;/p&gt;
+&lt;h3&gt;Going&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;DE&lt;/span&gt;-less&lt;/h3&gt;
+&lt;p&gt;When I used Ubuntu, I never really used a lot of the applications that came with the &lt;span class=&#34;caps&#34;&gt;GNOME&lt;/span&gt; desktop. So switching to Arch Linux gave me the freedom to go &lt;span class=&#34;caps&#34;&gt;DE&lt;/span&gt;-less without messing up the system as I did when I attempted to go &lt;span class=&#34;caps&#34;&gt;DE&lt;/span&gt;-less with a standard Ubuntu install (though it is possible to do that with&amp;nbsp;ubuntu-minimal). &lt;/p&gt;
+&lt;div class=&#34;picture right&#34;&gt;&lt;a href=&#34;/media/images/0408code.png&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/media/images/0408code.png&#34; width=&#34;250&#34; alt=&#34;Not this one&#34; /&gt;&lt;/a&gt;My subtle desktop&lt;/div&gt;
+
+&lt;p&gt;Going &lt;span class=&#34;caps&#34;&gt;DE&lt;/span&gt;-less meant having to set up a lot of things myself, which was fine with&amp;nbsp;me. &lt;/p&gt;
+&lt;p&gt;For a &lt;span class=&#34;caps&#34;&gt;WM&lt;/span&gt;, I went with a standalone, tiling &lt;span class=&#34;caps&#34;&gt;WM&lt;/span&gt; called &lt;a href=&#34;http://subtle.subforge.org&#34;&gt;&lt;em&gt;subtle&lt;/em&gt;&lt;/a&gt;. Subtle is configurable through a ruby file that sits in your &lt;code&gt;$XDG_CONFIG_HOME&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;I then installed some &lt;a href=&#34;https://wiki.archlinux.org/index.php/Lightweight_Applications&#34;&gt;lightweight applications&lt;/a&gt;, many of which were command-line based or very light on system&amp;nbsp;resources. &lt;/p&gt;
+&lt;h3&gt;Bottom&amp;nbsp;line?&lt;/h3&gt;
+&lt;p&gt;Minimalism is&amp;nbsp;awesome. &lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">New site</title>
+            <author><name>artEMIS technologies</name></author>
+            <link href="/blog/2011-04-17-NewSite.html"/>
+            <updated>2011-04-17T10:00:00Z</updated>
+            <published>2011-04-17T10:00:00Z</published>
+            <id>/blog/2011-04-17-NewSite.html</id>
+                        <category   scheme="/blog/tags"
+                        term="site"
+                        label="Site" />
+                        <category   scheme="/blog/tags"
+                        term="jekyll"
+                        label="Jekyll" />
+                        <category   scheme="/blog/tags"
+                        term="hyde"
+                        label="Hyde" />
+            
+            <content type="html">
+                                &lt;p&gt;As if I didn&amp;#8217;t have enough distractions with which to procrastinate, I started this site.I decided that my geeky interests needed some sort of place on earth so that I can up my geek cred by infinity.
+So here it is, a site managed using &lt;a href=&#34;https://github.com/mojombo/jekyll&#34;&gt;Jekyll&lt;/a&gt;. No, not the Doctor Henry Jekyll of &lt;em&gt;The Strange Case of Dr Jekyll and Mr Hyde&lt;/em&gt; (though that would certainly be an interesting experience indeed, having a blog managed by a character representing the duality of the human spirit). I decided to run it on a &lt;em&gt;static website generator&lt;/em&gt; so that I won&amp;#8217;t have to worry about MySQL being hacked or some other sort of issue that accompanies a dynamic&amp;nbsp;site.&lt;/p&gt;
+&lt;div class=&#34;picture left&#34;&gt; &lt;img src=&#34;/images/Jekyllhyde.jpg&#34; width=&#34;250&#34; alt=&#34;Not this one&#34; /&gt;No, not this one.&lt;/div&gt;
+
+&lt;h3&gt;My&amp;nbsp;excuses&lt;/h3&gt;
+&lt;p&gt;I need to keep &lt;em&gt;Boredom&lt;/em&gt; at bay when I&amp;#8217;m at school, and blogging/programming keeps the Boredom away. All work and no play causes me&amp;nbsp;dismay. &lt;/p&gt;
+&lt;p&gt;(I felt like rhyming the previous line,&amp;nbsp;okay?)&lt;/p&gt;            </content>
+        </entry>
+    </feed>

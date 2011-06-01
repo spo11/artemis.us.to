@@ -1,0 +1,37 @@
+---
+title: Hyde
+description: correcting myths about linux OS'es
+created: !!timestamp '2011-05-17 10:00:00'
+tags:
+    - linux
+    - arch
+---
+
+{% mark excerpt -%}
+
+::Evil laughter::. No, I've not gone mad. I was always mad. My mental issues aside, I recently took an interest in static website generators (which may seem like something from the '90s), When I refer to *Jekyll* and *Hyde*, I mean the static website generators. 
+
+Reading Tom Preston's post on [blogging like a hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) inspired me to **bake** my own site using [Jekyll](https://github.com/mojombo/jekyll). However, Jekyll didn't have certain features I wanted on my own site, so I took a look at [Hyde](https://github.com/lakshmivyas/hyde) and switched this site over to that. 
+
+{%- endmark %}
+
+### What I Wanted
+* A navigation menu that could show active and inactive states (like on this site)
+* Easy maintenance &amp; configuration
+* Static pages (for faster performance)
+* Tags
+
+### What Hyde Offers Over Jekyll
+If you look past the caning incident, my buddy Ed Hyde ain't so bad. Sure, he's violent and generally unpleasant and not exactly an upholder of moral standards, but whatever. 
+
+Now back to this baked website thing. (I couldn't resist referencing *The Strange Case of Dr Jekyll and Mr Hyde, sorry).  
+
+I really liked using Jekyll as a minimalist yet extensible website generator, but I wanted a little more. Hyde has support built-in for tagging posts, something which Jekyll has as well but in my opinion doesn't handle as efficiently as Hyde. Cosmetically, I also appreciated that I could use a navigation menu that could display active/inactive states (I realize this may seem trivial to some people, but I find it's a great way to keep track of where I am on a site). 
+
+### The Switching Process
+They may seem remarkably different on the outside, but in reality Jekyll and Hyde are the same person. These generators accomplish the same thing using a different language (Jekyll uses ruby, whereas Hyde uses python).
+
+Switching didn't require that I back up a MySQL database or any complicated configuration files. All I needed to do was transfer my blog posts to a folder and change the frontmatter a bit, and I was done.
+
+### To be continued
+In the next part, I'll write on the steps of setting up a hyde site. 

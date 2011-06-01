@@ -1,0 +1,90 @@
+{% extends "base.j2" %}
+
+{% block main -%}
+<div class="paginator">
+
+<div class="previous">
+<a class="previous{{' disabled' if not resource.prev_by_time }}"
+    title="{{ resource.prev_by_time.meta.title }}"
+    {% if resource.prev_by_time %}
+    href="{{ content_url(resource.prev_by_time.url) }}"{% endif %}>
+    &larr; Previous
+</a>
+</div>
+
+<div class="taglist">
+{% if resource.meta.tags %}
+<ul class="tags clear">
+{% for tag in resource.meta.tags %}
+<li>
+    <a class="small" href="{{ content_url('blog/tags/'~tag~'.html') }}">
+        {{ tag }}
+    </a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+
+<div class="next">
+<a class="next{{' disabled' if not resource.next_by_time }}"
+    title="{{ resource.next_by_time.meta.title }}"
+    {% if resource.next_by_time %}
+    href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>
+    Next &rarr;
+</a>
+</div>
+
+</div>
+
+<hr>
+
+<h2 class="post-title">
+        {{ resource.meta.title }}
+</h2>
+<span class="date">
+<time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">
+    {{ resource.meta.created.strftime('%d %b %Y') }}
+</time>
+</span>
+
+{% filter markdown|typogrify -%}
+{% mark post -%}
+{% block post -%}{%- endblock %}
+{%- endmark %}
+{%- endfilter %}
+<hr>
+<div class="paginator">
+
+<div class="previous">
+<a class="previous{{' disabled' if not resource.prev_by_time }}"
+    title="{{ resource.prev_by_time.meta.title }}"
+    {% if resource.prev_by_time %}
+    href="{{ content_url(resource.prev_by_time.url) }}"{% endif %}>
+    &larr; Previous
+</a>
+</div>
+<div class="taglist">
+{% if resource.meta.tags %}
+<ul class="tags clear">
+{% for tag in resource.meta.tags %}
+<li>
+    <a class="small" href="{{ content_url('blog/tags/'~tag~'.html') }}">
+        {{ tag }}
+    </a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+<div class="next">
+<a class="next{{' disabled' if not resource.next_by_time }}"
+    title="{{ resource.next_by_time.meta.title }}"
+    {% if resource.next_by_time %}
+    href="{{ content_url(resource.next_by_time.url) }}"{% endif %}>
+    Next &rarr;
+</a>
+</div>
+
+</div>
+{%- endblock %}
